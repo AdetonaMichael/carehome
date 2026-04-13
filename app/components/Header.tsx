@@ -9,7 +9,7 @@ export default function Header() {
           href="/"
           className="flex items-center gap-2 group"
         >
-          <div className="w-9 h-9 bg-blue-700 rounded-lg flex items-center justify-center group-hover:bg-blue-800 transition-colors">
+          <div className="w-9 h-9 bg-blue-700 rounded-full flex items-center justify-center group-hover:bg-blue-800 transition-colors">
             <span className="text-white font-bold text-sm">S</span>
           </div>
           <div>

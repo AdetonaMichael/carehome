@@ -25,19 +25,30 @@ export default function Home() {
         heading="Real-World Challenges Care Teams Face"
         subheading="These challenges are not due to lack of effort — they are often a result of fragmented systems and processes."
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card
-            title="Delayed Documentation"
-            description="A fall occurs during the night shift, but documentation is completed hours later due to workload and system limitations."
-          />
-          <Card
-            title="Duplicate Data Entry"
-            description="Staff complete training, but the same information must be recorded across multiple systems."
-          />
-          <Card
-            title="Inspection Stress"
-            description="Before inspections, teams manually organise documentation, creating stress and delays."
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="bg-blue-50 rounded-xl overflow-hidden border border-blue-100">
+            <img
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop"
+              alt="Care home team working together"
+              className="w-full h-64 object-cover"
+            />
+          </div>
+          <div>
+            <div className="grid grid-cols-1 gap-6">
+              <Card
+                title="Delayed Documentation"
+                description="A fall occurs during the night shift, but documentation is completed hours later due to workload and system limitations."
+              />
+              <Card
+                title="Duplicate Data Entry"
+                description="Staff complete training, but the same information must be recorded across multiple systems."
+              />
+              <Card
+                title="Inspection Stress"
+                description="Before inspections, teams manually organise documentation, creating stress and delays."
+              />
+            </div>
+          </div>
         </div>
       </Section>
 
@@ -45,9 +56,17 @@ export default function Home() {
       <Section
         id="building"
         heading="A Platform Designed to Support Everyday Care Operations"
+        className="bg-blue-50"
       >
-        <div className="max-w-3xl">
-          <div className="bg-slate-50 border border-slate-200 rounded-xl p-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+          <div className="bg-white border border-blue-100 rounded-xl overflow-hidden shadow-sm">
+            <img
+              src="https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=800&h=600&fit=crop"
+              alt="Healthcare worker managing patient care"
+              className="w-full h-64 object-cover"
+            />
+          </div>
+          <div className="bg-white border border-blue-100 rounded-xl p-8">
             <ul className="space-y-5">
               <li className="flex gap-4">
                 <div className="w-6 h-6 rounded-full bg-blue-700 flex-shrink-0 flex items-center justify-center">
@@ -86,7 +105,7 @@ export default function Home() {
                 </div>
               </li>
             </ul>
-            <p className="text-slate-600 italic mt-8 pt-8 border-t border-slate-300 text-sm">
+            <p className="text-slate-600 italic mt-8 pt-8 border-t border-blue-100 text-sm">
               "Designed to make everyday tasks easier to manage — without adding complexity."
             </p>
           </div>
@@ -149,15 +168,24 @@ export default function Home() {
       {/* SECTION 5: BUILT WITH INDUSTRY INPUT */}
       <Section
         id="industry-input"
-        className="bg-white"
+        className="bg-blue-50"
       >
-        <div className="max-w-3xl mx-auto text-center bg-slate-50 border border-slate-200 rounded-xl p-12">
-          <h2 className="text-2xl font-semibold text-slate-950 mb-4">
-            Built With Industry Input
-          </h2>
-          <p className="text-slate-600 leading-relaxed">
-            We are working closely with care home professionals, operational leaders, and compliance-focused advisors to ensure the platform reflects real-world needs.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+          <div className="bg-white rounded-xl overflow-hidden border border-blue-100 shadow-sm">
+            <img
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop"
+              alt="Care professionals collaborating"
+              className="w-full h-64 object-cover"
+            />
+          </div>
+          <div>
+            <h2 className="text-2xl font-semibold text-slate-950 mb-4">
+              Built With Industry Input
+            </h2>
+            <p className="text-slate-600 leading-relaxed">
+              We are working closely with care home professionals, operational leaders, and compliance-focused advisors to ensure the platform reflects real-world needs.
+            </p>
+          </div>
         </div>
       </Section>
 
@@ -199,7 +227,7 @@ export default function Home() {
       </Section>
 
       {/* SECTION 7: EARLY-STAGE NOTE */}
-      <Section
+      {/* <Section
         id="early-stage"
         className="bg-white"
       >
@@ -222,7 +250,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </Section>
+      </Section> */}
 
       {/* SECTION 8: FINAL CTA */}
       <Section

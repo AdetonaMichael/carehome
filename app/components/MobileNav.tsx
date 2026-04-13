@@ -16,7 +16,7 @@ export default function MobileNav() {
     <>
       {/* Mobile Menu Button */}
       <button
-        className="fixed top-6 left-6 z-50 md:hidden flex flex-col gap-1.5 focus:outline-none"
+        className="fixed top-6 right-6 z-50 md:hidden flex flex-col gap-1.5 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >

@@ -102,21 +102,21 @@ export default function About() {
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="border border-slate-200 rounded-lg p-6">
-            <div className="text-3xl mb-3">🎯</div>
+            <div className="text-3xl mb-3"></div>
             <h3 className="font-semibold text-slate-900 mb-3">Better Outcomes</h3>
             <p className="text-slate-700 text-sm">
               When systems are clear and processes are simple, teams can focus on what matters: quality care.
             </p>
           </div>
           <div className="border border-slate-200 rounded-lg p-6">
-            <div className="text-3xl mb-3">🤝</div>
+            <div className="text-3xl mb-3"></div>
             <h3 className="font-semibold text-slate-900 mb-3">Reduced Burden</h3>
             <p className="text-slate-700 text-sm">
               Less time on administrative complexity means more time and energy for the people under their care.
             </p>
           </div>
           <div className="border border-slate-200 rounded-lg p-6">
-            <div className="text-3xl mb-3">🏆</div>
+            <div className="text-3xl mb-3"></div>
             <h3 className="font-semibold text-slate-900 mb-3">Confidence</h3>
             <p className="text-slate-700 text-sm">
               Clear systems and organized information mean teams are prepared and confident, always.
@@ -124,7 +124,6 @@ export default function About() {
           </div>
         </div>
       </Section>
-
       {/* Current Stage */}
       <Section
         id="current-stage"
