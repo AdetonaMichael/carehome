@@ -26,9 +26,9 @@ export default function Home() {
         subheading="These challenges are not due to lack of effort — they are often a result of fragmented systems and processes."
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="bg-blue-50 rounded-xl overflow-hidden border border-blue-100">
+          <div className="bg-[#f0f9fc] rounded-xl overflow-hidden border border-[#c8e7f0]">
             <img
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop"
+              src="https://cdn.pixabay.com/photo/2025/05/29/08/25/doctor-9628974_1280.jpg"
               alt="Care home team working together"
               className="w-full h-64 object-cover"
             />
@@ -56,20 +56,20 @@ export default function Home() {
       <Section
         id="building"
         heading="A Platform Designed to Support Everyday Care Operations"
-        className="bg-blue-50"
+        className="bg-[#f0f9fc]"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-          <div className="bg-white border border-blue-100 rounded-xl overflow-hidden shadow-sm">
+          <div className="bg-white border border-[#c8e7f0] rounded-xl overflow-hidden shadow-sm">
             <img
               src="https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=800&h=600&fit=crop"
               alt="Healthcare worker managing patient care"
               className="w-full h-64 object-cover"
             />
           </div>
-          <div className="bg-white border border-blue-100 rounded-xl p-8">
+          <div className="bg-white border border-[#c8e7f0] rounded-xl p-8">
             <ul className="space-y-5">
               <li className="flex gap-4">
-                <div className="w-6 h-6 rounded-full bg-blue-700 flex-shrink-0 flex items-center justify-center">
+                <div className="w-6 h-6 rounded-full bg-[#77bdda] flex-shrink-0 flex items-center justify-center">
                   <span className="text-white text-sm font-semibold">✓</span>
                 </div>
                 <div>
@@ -78,7 +78,7 @@ export default function Home() {
                 </div>
               </li>
               <li className="flex gap-4">
-                <div className="w-6 h-6 rounded-full bg-blue-700 flex-shrink-0 flex items-center justify-center">
+                <div className="w-6 h-6 rounded-full bg-[#77bdda] flex-shrink-0 flex items-center justify-center">
                   <span className="text-white text-sm font-semibold">✓</span>
                 </div>
                 <div>
@@ -87,7 +87,7 @@ export default function Home() {
                 </div>
               </li>
               <li className="flex gap-4">
-                <div className="w-6 h-6 rounded-full bg-blue-700 flex-shrink-0 flex items-center justify-center">
+                <div className="w-6 h-6 rounded-full bg-[#77bdda] flex-shrink-0 flex items-center justify-center">
                   <span className="text-white text-sm font-semibold">✓</span>
                 </div>
                 <div>
@@ -96,7 +96,7 @@ export default function Home() {
                 </div>
               </li>
               <li className="flex gap-4">
-                <div className="w-6 h-6 rounded-full bg-blue-700 flex-shrink-0 flex items-center justify-center">
+                <div className="w-6 h-6 rounded-full bg-[#77bdda] flex-shrink-0 flex items-center justify-center">
                   <span className="text-white text-sm font-semibold">✓</span>
                 </div>
                 <div>
@@ -105,7 +105,7 @@ export default function Home() {
                 </div>
               </li>
             </ul>
-            <p className="text-slate-600 italic mt-8 pt-8 border-t border-blue-100 text-sm">
+            <p className="text-slate-600 italic mt-8 pt-8 border-t border-[#c8e7f0] text-sm">
               "Designed to make everyday tasks easier to manage — without adding complexity."
             </p>
           </div>
@@ -150,7 +150,7 @@ export default function Home() {
               )}
 
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center h-full hover:shadow-md transition-shadow">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-700 text-white rounded-full font-semibold mb-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#77bdda] text-white rounded-full font-semibold mb-4">
                   {step.number}
                 </div>
                 <h3 className="text-base font-semibold text-slate-950 mb-2">
@@ -168,12 +168,12 @@ export default function Home() {
       {/* SECTION 5: BUILT WITH INDUSTRY INPUT */}
       <Section
         id="industry-input"
-        className="bg-blue-50"
+        className="bg-[#f0f9fc]"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-          <div className="bg-white rounded-xl overflow-hidden border border-blue-100 shadow-sm">
+          <div className="bg-white rounded-xl overflow-hidden border border-[#c8e7f0] shadow-sm">
             <img
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop"
+              src="https://cdn.pixabay.com/photo/2025/05/16/10/55/ai-generated-9603565_1280.jpg"
               alt="Care professionals collaborating"
               className="w-full h-64 object-cover"
             />
@@ -197,7 +197,7 @@ export default function Home() {
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center">
-            <div className="inline-block bg-blue-700 text-white rounded-full p-4 mb-4">
+            <div className="inline-block bg-[#77bdda] text-white rounded-full p-4 mb-4">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
@@ -206,7 +206,7 @@ export default function Home() {
             <p className="text-slate-600 text-sm">Designed for busy teams. Minimal training. Maximum clarity.</p>
           </div>
           <div className="text-center">
-            <div className="inline-block bg-blue-700 text-white rounded-full p-4 mb-4">
+            <div className="inline-block bg-[#77bdda] text-white rounded-full p-4 mb-4">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
@@ -215,7 +215,7 @@ export default function Home() {
             <p className="text-slate-600 text-sm">Works alongside your current processes, not against them.</p>
           </div>
           <div className="text-center">
-            <div className="inline-block bg-blue-700 text-white rounded-full p-4 mb-4">
+            <div className="inline-block bg-[#77bdda] text-white rounded-full p-4 mb-4">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
@@ -232,19 +232,19 @@ export default function Home() {
         className="bg-white"
       >
         <div className="max-w-3xl mx-auto">
-          <div className="border-l-4 border-blue-700 pl-6 bg-slate-50 p-6 rounded-r-xl">
+          <div className="border-l-4 border-[#77bdda] pl-6 bg-slate-50 p-6 rounded-r-xl">
             <h3 className="text-xl font-semibold text-slate-950 mb-4">We're Early-Stage</h3>
             <ul className="space-y-3 text-slate-600">
               <li className="flex gap-3">
-                <span className="text-blue-700 font-semibold text-lg">•</span>
+                <span className="text-[#77bdda] font-semibold text-lg">•</span>
                 <span className="text-sm">Currently in development</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-blue-700 font-semibold text-lg">•</span>
+                <span className="text-[#77bdda] font-semibold text-lg">•</span>
                 <span className="text-sm">Being shaped with care professionals</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-blue-700 font-semibold text-lg">•</span>
+                <span className="text-[#77bdda] font-semibold text-lg">•</span>
                 <span className="text-sm">Preparing for pilot phase</span>
               </li>
             </ul>
@@ -255,25 +255,25 @@ export default function Home() {
       {/* SECTION 8: FINAL CTA */}
       <Section
         id="cta"
-        className="bg-blue-700 text-white"
+        className="bg-[#77bdda] text-white"
       >
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Join Early Access
           </h2>
-          <p className="text-lg text-blue-50 mb-8 leading-relaxed">
+          <p className="text-lg text-[#e0f5fb] mb-8 leading-relaxed">
             If you are interested in learning more or participating in early discussions, we would be happy to connect.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-slate-50 transition-colors"
+              className="bg-white text-[#77bdda] px-8 py-3 rounded-lg font-semibold hover:bg-slate-50 transition-colors"
             >
               Join Early Access
             </a>
             <a
               href="/contact"
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors"
+              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#77bdda] transition-colors"
             >
               Contact Us
             </a>

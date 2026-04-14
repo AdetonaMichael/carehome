@@ -12,7 +12,7 @@ export default function Header() {
         >
           <Image src="/logo2.jpeg" alt="SympliCare AI Logo" width={36} height={36} className="rounded-full" />
           <div>
-            <div className="font-semibold text-slate-950 leading-tight text-sm">SympliCare <span className="font-semibold text-[#77bdda] text-xs leading-tight">AI</span></div>
+            <div className="font-semibold text-slate-950 leading-tight text-md">SympliCare <span className="font-semibold text-[#77bdda] text-xs leading-tight">AI</span></div>
             
           </div>
         </Link>

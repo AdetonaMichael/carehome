@@ -47,10 +47,10 @@ export default function MobileNav() {
             className="flex items-center gap-2 group"
             onClick={() => setIsOpen(false)}
           >
-            <Image src="/logo.jpeg" alt="SympliCare Logo" width={36} height={36} className="rounded-lg" />
+            <Image src="/logo.jpeg" alt="SympliCare AI Logo" width={36} height={36} className="rounded-lg" />
             <div>
-              <div className="font-semibold text-slate-950 leading-tight text-sm">Simpli</div>
-              <div className="font-semibold text-blue-700 text-xs leading-tight">Care</div>
+              <div className="font-semibold text-slate-950 leading-tight text-sm">SympliCare</div>
+              <div className="font-semibold text-[#77bdda] text-xs leading-tight">AI</div>
             </div>
           </Link>
         </div>
@@ -76,7 +76,7 @@ export default function MobileNav() {
         <div className="border-t border-slate-200 p-4">
           <Link
             href="/contact"
-            className="block bg-blue-700 text-white px-4 py-2.5 rounded-lg text-center font-medium hover:bg-blue-800 transition-colors w-full text-sm"
+            className="block bg-[#77bdda] text-white px-4 py-2.5 rounded-lg text-center font-medium hover:bg-[#5a9bb3] transition-colors w-full text-sm"
             onClick={() => setIsOpen(false)}
           >
             Get in Touch

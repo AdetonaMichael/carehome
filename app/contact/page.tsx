@@ -67,7 +67,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="Your name"
-                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent text-slate-950 placeholder-slate-400"
+                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#77bdda] focus:border-transparent text-slate-950 placeholder-slate-400"
                 />
               </div>
 
@@ -87,7 +87,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="your@email.com"
-                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent text-slate-950 placeholder-slate-400"
+                  className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#77bdda] focus:border-transparent text-slate-950 placeholder-slate-400"
                 />
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function Contact() {
                 value={formData.organisation}
                 onChange={handleChange}
                 placeholder="e.g. Example Care Home / Manager"
-                className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent text-slate-950 placeholder-slate-400"
+                className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#77bdda] focus:border-transparent text-slate-950 placeholder-slate-400"
               />
             </div>
 
@@ -127,7 +127,7 @@ export default function Contact() {
                 required
                 rows={6}
                 placeholder="Tell us about your interest in SympliCare. What operational challenges are you facing?"
-                className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent text-slate-950 placeholder-slate-400 resize-none"
+                className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#77bdda] focus:border-transparent text-slate-950 placeholder-slate-400 resize-none"
               />
             </div>
 
@@ -135,7 +135,7 @@ export default function Contact() {
             <div className="flex gap-3">
               <button
                 type="submit"
-                className="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
+                className="bg-[#77bdda] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#5a9bb3] transition-colors"
               >
                 Send Message
               </button>
@@ -172,7 +172,7 @@ export default function Contact() {
               </p>
               <a
                 href="mailto:hello@symplicare.ai"
-                className="text-blue-700 font-medium hover:text-blue-800 transition-colors"
+                className="text-[#77bdda] font-medium hover:text-[#5a9bb3] transition-colors"
               >
                 hello@symplicare.ai
               </a>
@@ -185,7 +185,7 @@ export default function Contact() {
               </p>
               <a
                 href="#"
-                className="text-blue-700 font-medium hover:text-blue-800 transition-colors"
+                className="text-[#77bdda] font-medium hover:text-[#5a9bb3] transition-colors"
               >
                 Book a Call
               </a>
@@ -198,7 +198,7 @@ export default function Contact() {
               </p>
               <a
                 href="#"
-                className="text-blue-700 font-medium hover:text-blue-800 transition-colors"
+                className="text-[#77bdda] font-medium hover:text-[#5a9bb3] transition-colors"
               >
                 Join Newsletter
               </a>
@@ -210,16 +210,16 @@ export default function Contact() {
       {/* Final CTA */}
       <Section
         id="final-cta"
-        className="bg-blue-700 text-white text-center"
+        className="bg-[#77bdda] text-white text-center"
       >
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Ready to Explore SympliCare?</h2>
-          <p className="text-blue-50 mb-8 text-lg">
+          <p className="text-[#e0f5fb] mb-8 text-lg">
             We're building this with care professionals. Your input shapes our direction.
           </p>
           <a
             href="/"
-            className="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-slate-50 transition-colors"
+            className="inline-block bg-white text-[#77bdda] px-8 py-3 rounded-lg font-semibold hover:bg-slate-50 transition-colors"
           >
             Back to Home
           </a>

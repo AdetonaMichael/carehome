@@ -21,7 +21,7 @@ const medicalImages = [
     alt: 'Healthcare professional with patient'
   },
   {
-    src: 'https://images.unsplash.com/photo-1584308666744-24d5f400f7d2?w=800&h=600&fit=crop',
+    src: 'https://cdn.pixabay.com/photo/2017/08/06/07/12/dentist-2589771_1280.jpg',
     alt: 'Medical professional in healthcare setting'
   },
   {
@@ -29,11 +29,11 @@ const medicalImages = [
     alt: 'Elderly care support'
   },
   {
-    src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop',
+    src: 'https://cdn.pixabay.com/photo/2022/09/14/02/36/care-7453215_1280.jpg',
     alt: 'Healthcare team discussion'
   },
   {
-    src: 'https://images.unsplash.com/photo-1532938911575-472cf938aaf5?w=800&h=600&fit=crop',
+    src: 'https://cdn.pixabay.com/photo/2026/03/22/11/38/u_c48rf6ybx8-laptop-10186538_1280.jpg',
     alt: 'Healthcare professional care'
   },
   {
@@ -73,7 +73,7 @@ export default function Hero({
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
               <a
                 href={primaryCTA.href}
-                className="bg-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition-colors text-center"
+                className="bg-[#77bdda] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#5a9bb3] transition-colors text-center"
               >
                 {primaryCTA.label}
               </a>
