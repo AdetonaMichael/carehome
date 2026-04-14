@@ -19,7 +19,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`py-20 md:py-28 ${!hasBgClass ? 'bg-white' : ''} ${className}`}
+      className={`py-5 md:py-5 ${!hasBgClass ? 'bg-white' : ''} ${className}`}
     >
       <div className="max-w-7xl mx-auto px-6">
         {heading && (

@@ -79,7 +79,9 @@ export default function Hero({
               </a>
               <a
                 href={secondaryCTA.href}
-                className="border-2 border-slate-300 text-slate-950 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors text-center"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-[#ca86bc] text-[#ca86bc] px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors text-center"
               >
                 {secondaryCTA.label}
               </a>

@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "SympliCare AI — Care Home Operations Platform",
+  title: "SympliCare AI | Care Home Operations Platform",
   description: "Simplify care home operations with SympliCare AI. Structured workflows, practical documentation management, and operational visibility designed for care teams.",
   keywords: ["care home management", "operations platform", "care home software", "documentation system"],
   authors: [{ name: "SympliCare" }],

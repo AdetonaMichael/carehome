@@ -6,7 +6,7 @@ interface CardProps {
 
 export default function Card({ title, description, icon }: CardProps) {
   return (
-    <div className="group bg-white border border-slate-200 rounded-xl p-6 transition-all duration-300 hover:shadow-md hover:border-slate-300">
+    <div className="group bg-white border border-[#ca86bc] rounded-xl p-6 transition-all duration-300 hover:shadow-md hover:border-slate-300">
       {icon && (
         <div className="mb-4 inline-flex items-center justify-center w-10 h-10 bg-slate-100 text-slate-700 rounded-lg group-hover:bg-slate-200 transition-colors">
           {icon}

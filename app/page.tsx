@@ -16,7 +16,7 @@ export default function Home() {
         }}
         secondaryCTA={{
           label: 'Book a Call',
-          href: '/contact',
+          href: 'https://calendly.com/symplicare-ai/new-meeting',
         }}
       />
 
@@ -198,7 +198,7 @@ export default function Home() {
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center">
-            <div className="inline-block bg-[#77bdda] text-white rounded-full p-4 mb-4">
+            <div className="inline-block bg-[#ca86bc] text-white rounded-full p-4 mb-4">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
@@ -216,13 +216,75 @@ export default function Home() {
             <p className="text-slate-600 text-sm">Works alongside your current processes, not against them.</p>
           </div>
           <div className="text-center">
-            <div className="inline-block bg-[#77bdda] text-white rounded-full p-4 mb-4">
+            <div className="inline-block bg-[#ca86bc] text-white rounded-full p-4 mb-4">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
             </div>
             <h3 className="text-base font-semibold text-slate-950 mb-2">Reduces Complexity</h3>
             <p className="text-slate-600 text-sm">Simplifies operations without adding unnecessary features.</p>
+          </div>
+        </div>
+      </Section>
+
+      {/* SECTION 7: CAREERS */}
+      <Section
+        id="careers"
+        heading="Join Our Team"
+        subheading="We're building a platform for care. Help us create something meaningful and join a team that's passionate about the mission."
+        className="bg-gradient-to-br from-[#f0f9fc] to-[#faf6fb]"
+      >
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
+              <h3 className="text-lg font-semibold text-slate-950 mb-2">Why Join Us?</h3>
+              <ul className="space-y-3">
+                <li className="flex gap-3">
+                  <span className="text-[#77bdda] font-bold">✓</span>
+                  <span className="text-slate-600 text-sm">Work on a product that directly impacts real lives</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#ca86bc] font-bold">✓</span>
+                  <span className="text-slate-600 text-sm">Collaborate with industry experts and care professionals</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#77bdda] font-bold">✓</span>
+                  <span className="text-slate-600 text-sm">Flexible, remote-first workplace culture</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#ca86bc] font-bold">✓</span>
+                  <span className="text-slate-600 text-sm">Continuous learning and professional growth</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
+              <h3 className="text-lg font-semibold text-slate-950 mb-2">We're Hiring For</h3>
+              <ul className="space-y-2 text-slate-600 text-sm">
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-[#77bdda] rounded-full"></span>
+                  Full Stack Developers
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-[#ca86bc] rounded-full"></span>
+                  Product & Design
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-[#77bdda] rounded-full"></span>
+                  Operations & Strategy
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-[#ca86bc] rounded-full"></span>
+                  And more...
+                </li>
+              </ul>
+              <a
+                href="/careers"
+                className="mt-6 inline-block bg-[#77bdda] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#5a9bb3] transition-colors text-sm"
+              >
+                View All Positions
+              </a>
+            </div>
           </div>
         </div>
       </Section>
