@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import Section from './components/Section';
 import Card from './components/Card';
+import { careflow, uk2 } from '@/public';
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="bg-[#f0f9fc] rounded-xl overflow-hidden border border-[#c8e7f0]">
             <img
-              src="https://cdn.pixabay.com/photo/2025/05/29/08/25/doctor-9628974_1280.jpg"
+              src={careflow.src}
               alt="Care home team working together"
               className="w-full h-64 object-cover"
             />
@@ -61,7 +62,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div className="bg-white border border-[#c8e7f0] rounded-xl overflow-hidden shadow-sm">
             <img
-              src="https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=800&h=600&fit=crop"
+              src={uk2.src}
               alt="Healthcare worker managing patient care"
               className="w-full h-64 object-cover"
             />
@@ -225,32 +226,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
-      {/* SECTION 7: EARLY-STAGE NOTE */}
-      {/* <Section
-        id="early-stage"
-        className="bg-white"
-      >
-        <div className="max-w-3xl mx-auto">
-          <div className="border-l-4 border-[#77bdda] pl-6 bg-slate-50 p-6 rounded-r-xl">
-            <h3 className="text-xl font-semibold text-slate-950 mb-4">We're Early-Stage</h3>
-            <ul className="space-y-3 text-slate-600">
-              <li className="flex gap-3">
-                <span className="text-[#77bdda] font-semibold text-lg">•</span>
-                <span className="text-sm">Currently in development</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-[#77bdda] font-semibold text-lg">•</span>
-                <span className="text-sm">Being shaped with care professionals</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-[#77bdda] font-semibold text-lg">•</span>
-                <span className="text-sm">Preparing for pilot phase</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </Section> */}
 
       {/* SECTION 8: FINAL CTA */}
       <Section

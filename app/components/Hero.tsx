@@ -17,7 +17,7 @@ interface HeroProps {
 
 const medicalImages = [
   {
-    src: 'https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop',
+    src: '/ukold.jpeg',
     alt: 'Healthcare professional with patient'
   },
   {
@@ -59,12 +59,12 @@ export default function Hero({
   }, []);
 
   return (
-    <section className="min-h-[600px] md:min-h-[680px] bg-white flex items-center pt-6">
-      <div className="max-w-7xl mx-auto px-6 w-full">
+    <section className="min-h-[600px] md:min-h-[680px] bg-white flex items-center pt-6 md:pt-6">
+      <div className="max-w-7xl mx-auto px-6 w-full md:mt-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
           <div className="space-y-8">
-            <h1 className="text-5xl md:text-6xl font-semibold text-slate-950 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-semibold text-slate-950 leading-tight">
               {headline}
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed max-w-lg">

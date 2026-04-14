@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export const metadata: Metadata = {
@@ -59,7 +62,7 @@ export const metadata: Metadata = {
     title: "SympliCare AI — Care Home Operations Platform",
     description: "Simplify care home operations with SympliCare AI. Structured workflows, practical documentation management, and operational visibility designed for care teams.",
     images: ["/logo2.jpeg"],
-    creator: "@SympliCare",
+    creator: "@SympliCareAI",
   },
   robots: {
     index: true,

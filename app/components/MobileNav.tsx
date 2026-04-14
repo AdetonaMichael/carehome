@@ -15,16 +15,32 @@ export default function MobileNav() {
 
   return (
     <>
-      {/* Mobile Menu Button */}
-      <button
-        className="fixed top-6 right-6 z-50 md:hidden flex flex-col gap-1.5 focus:outline-none"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle menu"
-      >
-        <div className={`w-6 h-0.5 bg-slate-900 transition-all ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
-        <div className={`w-6 h-0.5 bg-slate-900 transition-all ${isOpen ? 'opacity-0' : ''}`}></div>
-        <div className={`w-6 h-0.5 bg-slate-900 transition-all ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></div>
-      </button>
+      {/* Mobile Header with Logo & Menu Button */}
+      <header className="md:hidden fixed top-0 left-0 right-0 bg-white border-b border-slate-200 z-40">
+        <div className="px-6 py-4 flex items-center justify-between">
+          {/* Logo */}
+          <Link
+            href="/"
+            className="flex items-center gap-2 group"
+          >
+            <Image src="/logo.jpeg" alt="SympliCare AI Logo" width={36} height={36} className="rounded-lg" />
+            <div>
+              <div className="font-semibold text-slate-950 leading-tight text-sm">SympliCare <span className="font-semibold text-[#77bdda] text-xs leading-tight">AI</span></div>
+            </div>
+          </Link>
+
+          {/* Menu Button */}
+          <button
+            className="flex flex-col gap-1.5 focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            <div className={`w-6 h-0.5 bg-slate-900 transition-all ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
+            <div className={`w-6 h-0.5 bg-slate-900 transition-all ${isOpen ? 'opacity-0' : ''}`}></div>
+            <div className={`w-6 h-0.5 bg-slate-900 transition-all ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></div>
+          </button>
+        </div>
+      </header>
 
       {/* Mobile Overlay */}
       {isOpen && (
@@ -36,7 +52,7 @@ export default function MobileNav() {
 
       {/* Mobile Side Navigation */}
       <aside
-        className={`fixed left-0 top-0 h-screen w-64 bg-white border-r border-slate-200 z-40 transform transition-transform flex flex-col md:hidden ${
+        className={`fixed left-0 top-0 h-screen w-64 bg-white border-r border-slate-200 z-50 transform transition-transform flex flex-col md:hidden ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -49,8 +65,7 @@ export default function MobileNav() {
           >
             <Image src="/logo.jpeg" alt="SympliCare AI Logo" width={36} height={36} className="rounded-lg" />
             <div>
-              <div className="font-semibold text-slate-950 leading-tight text-sm">SympliCare</div>
-              <div className="font-semibold text-[#77bdda] text-xs leading-tight">AI</div>
+              <div className="font-semibold text-slate-950 leading-tight text-sm">SympliCare <span className="font-semibold text-[#77bdda] text-xs leading-tight">AI</span></div>
             </div>
           </Link>
         </div>
