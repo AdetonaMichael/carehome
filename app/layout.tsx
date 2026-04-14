@@ -23,6 +23,31 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "SympliCare AI — Care Home Operations Platform",
   description: "A platform designed to support care home teams in managing documentation, workflows, and day-to-day operations in a structured and practical way.",
+  icons: {
+    icon: "/logo2.jpeg",
+  },
+  openGraph: {
+    title: "SympliCare AI — Care Home Operations Platform",
+    description: "A platform designed to support care home teams in managing documentation, workflows, and day-to-day operations in a structured and practical way.",
+    url: "https://symplicare.ai",
+    siteName: "SympliCare AI",
+    images: [
+      {
+        url: "/logo2.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "SympliCare AI Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SympliCare AI — Care Home Operations Platform",
+    description: "A platform designed to support care home teams in managing documentation, workflows, and day-to-day operations in a structured and practical way.",
+    images: ["/logo2.jpeg"],
+  },
 };
 
 export default function RootLayout({

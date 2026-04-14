@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,10 +12,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center">
-                <span className="text-white font-semibold text-xs">S</span>
-              </div>
-              <span className="text-base font-semibold text-slate-950">SympliCare</span>
+              <Image src="/logo2.jpeg" alt="SympliCare AI Logo" width={32} height={32} className="rounded-lg" />
+              <span className="text-base font-semibold text-slate-950">SympliCare AI</span>
             </div>
             <p className="text-sm text-slate-600 leading-relaxed">
               Supporting care teams with practical, structured operations management.
@@ -51,7 +50,7 @@ export default function Footer() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors"
+              className="inline-block bg-[#77bdda] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#5a9bb3] transition-colors"
             >
               Contact Us
             </Link>

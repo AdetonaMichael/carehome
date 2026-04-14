@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function MobileNav() {
@@ -46,9 +47,7 @@ export default function MobileNav() {
             className="flex items-center gap-2 group"
             onClick={() => setIsOpen(false)}
           >
-            <div className="w-9 h-9 bg-blue-700 rounded-lg flex items-center justify-center group-hover:bg-blue-800 transition-colors">
-              <span className="text-white font-semibold text-sm">S</span>
-            </div>
+            <Image src="/logo.jpeg" alt="SympliCare Logo" width={36} height={36} className="rounded-lg" />
             <div>
               <div className="font-semibold text-slate-950 leading-tight text-sm">Simpli</div>
               <div className="font-semibold text-blue-700 text-xs leading-tight">Care</div>

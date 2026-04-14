@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -9,12 +10,10 @@ export default function Header() {
           href="/"
           className="flex items-center gap-2 group"
         >
-          <div className="w-9 h-9 bg-blue-700 rounded-full flex items-center justify-center group-hover:bg-blue-800 transition-colors">
-            <span className="text-white font-bold text-sm">S</span>
-          </div>
+          <Image src="/logo2.jpeg" alt="SympliCare AI Logo" width={36} height={36} className="rounded-full" />
           <div>
-            <div className="font-semibold text-slate-950 leading-tight text-sm">Simpli</div>
-            <div className="font-semibold text-blue-700 text-xs leading-tight">Care</div>
+            <div className="font-semibold text-slate-950 leading-tight text-sm">SympliCare <span className="font-semibold text-[#77bdda] text-xs leading-tight">AI</span></div>
+            
           </div>
         </Link>
 
@@ -34,7 +33,7 @@ export default function Header() {
           </Link>
           <Link
             href="/contact"
-            className="bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors"
+            className="bg-[#77bdda] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#5a9bb3] transition-colors"
           >
             Get in Touch
           </Link>
