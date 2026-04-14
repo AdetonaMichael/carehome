@@ -1,3 +1,7 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+
 interface HeroProps {
   headline: string;
   subtext: string;
@@ -11,12 +15,49 @@ interface HeroProps {
   };
 }
 
+const medicalImages = [
+  {
+    src: 'https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop',
+    alt: 'Healthcare professional with patient'
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1584308666744-24d5f400f7d2?w=800&h=600&fit=crop',
+    alt: 'Medical professional in healthcare setting'
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&h=600&fit=crop',
+    alt: 'Elderly care support'
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop',
+    alt: 'Healthcare team discussion'
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1532938911575-472cf938aaf5?w=800&h=600&fit=crop',
+    alt: 'Healthcare professional care'
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop',
+    alt: 'Care team providing support'
+  },
+];
+
 export default function Hero({
   headline,
   subtext,
   primaryCTA,
   secondaryCTA,
 }: HeroProps) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % medicalImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="min-h-[600px] md:min-h-[680px] bg-white flex items-center pt-6">
       <div className="max-w-7xl mx-auto px-6 w-full">
@@ -45,68 +86,42 @@ export default function Hero({
             </div>
           </div>
 
-          {/* Dashboard Mock */}
-          <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
-            <div className="space-y-4">
-              {/* Header */}
-              <div className="flex justify-between items-center pb-4 border-b border-slate-200">
-                <h3 className="font-semibold text-slate-950 text-sm">Dashboard Overview</h3>
-                <div className="flex gap-1">
-                  <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
-                  <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
-                  <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
+          {/* Auto-Scrolling Medical Images Carousel */}
+          <div className="relative h-96 rounded-xl overflow-hidden border border-slate-200 shadow-lg">
+            <div className="relative w-full h-full">
+              {medicalImages.map((image, index) => (
+                <div
+                  key={index}
+                  className={`absolute inset-0 transition-opacity duration-1000 ${
+                    index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                  }`}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              </div>
+              ))}
+              
+              {/* Gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+            </div>
 
-              {/* Cards Grid */}
-              <div className="grid grid-cols-2 gap-3">
-                {/* Incident Tracking */}
-                <div className="bg-slate-50 rounded-lg border border-slate-200 p-4">
-                  <div className="text-xs text-slate-600 mb-2 font-medium">Incidents</div>
-                  <div className="text-2xl font-semibold text-slate-950">3</div>
-                  <div className="text-xs text-slate-500 mt-1">This week</div>
-                </div>
-
-                {/* Care Overview */}
-                <div className="bg-slate-50 rounded-lg border border-slate-200 p-4">
-                  <div className="text-xs text-slate-600 mb-2 font-medium">Care Plans</div>
-                  <div className="text-2xl font-semibold text-slate-950">42</div>
-                  <div className="text-xs text-slate-500 mt-1">Active</div>
-                </div>
-
-                {/* Alerts */}
-                <div className="bg-slate-50 rounded-lg border border-slate-200 p-4">
-                  <div className="text-xs text-slate-600 mb-2 font-medium">Alerts</div>
-                  <div className="text-2xl font-semibold text-slate-950">1</div>
-                  <div className="text-xs text-slate-600 mt-1">Attention needed</div>
-                </div>
-
-                {/* Updates */}
-                <div className="bg-slate-50 rounded-lg border border-slate-200 p-4">
-                  <div className="text-xs text-slate-600 mb-2 font-medium">Updates</div>
-                  <div className="text-2xl font-semibold text-slate-950">12</div>
-                  <div className="text-xs text-slate-500 mt-1">Today</div>
-                </div>
-              </div>
-
-              {/* Activity Feed */}
-              <div className="bg-slate-50 rounded-lg border border-slate-200 p-4 mt-2">
-                <div className="text-xs text-slate-600 mb-3 font-semibold">Recent Activity</div>
-                <div className="space-y-2 text-xs">
-                  <div className="flex gap-2">
-                    <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-1.5 flex-shrink-0"></div>
-                    <div className="text-slate-700">Documentation recorded</div>
-                  </div>
-                  <div className="flex gap-2">
-                    <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-1.5 flex-shrink-0"></div>
-                    <div className="text-slate-700">Care plan updated</div>
-                  </div>
-                  <div className="flex gap-2">
-                    <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-1.5 flex-shrink-0"></div>
-                    <div className="text-slate-700">Team notification</div>
-                  </div>
-                </div>
-              </div>
+            {/* Image Indicators */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+              {medicalImages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === currentImageIndex
+                      ? 'bg-white w-6'
+                      : 'bg-white/50 hover:bg-white/75'
+                  }`}
+                  aria-label={`Go to image ${index + 1}`}
+                />
+              ))}
             </div>
           </div>
         </div>
